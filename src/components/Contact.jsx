@@ -1,12 +1,12 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="w-screen max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl ">
-      <h1 className="bg-black text-4xl text-center w-screen" id="contact">
-        Connect with me
-      </h1>
-      <div className="flex flex-wrap gap-6 justify-center bg-black py-6 w-screen">
+<div className="w-full p-6 bg-black text-white text-center rounded-lg shadow-lg">
+
+      <h1 className="text-4xl font-bold mb-6">Connect with Me</h1>
+      
+      <div className="flex justify-center gap-6 mb-6">
         <a
           target="_blank"
           href="https://x.com/Garvit_cg26"
@@ -28,6 +28,17 @@ export default function Contact() {
         >
           <FaGithub className="text-3xl w-10 h-10" />
         </a>
+      </div>
+      
+      <div className="flex flex-col items-center gap-4">
+        <div className="flex items-center gap-3 text-gray-400">
+          <FaPhone className="text-2xl" />
+          <span className="text-lg">+91 98765 43210</span>
+        </div>
+        <div className="flex items-center gap-3 text-gray-400">
+          <FaEnvelope className="text-2xl" />
+          <span className="text-lg">garvittrivedi26@gmail.com</span>
+        </div>
       </div>
     </div>
   );

@@ -12,8 +12,9 @@ const projects = [
     "id": 2,
     "name": "expense-tracker",
     "description": "Expense Tracker – A simple app to track expenses, manage budgets, and analyze spending. 💰📊",
-    "tools": ["MongoDB", "Express", "React", "Node.js"],
-    "github": "https://github.com/Garvit-Trivedi/expensetracker"
+    "tools": [ "React", ],
+    "github": "https://github.com/Garvit-Trivedi/dashborad",
+    "deployed": "https://dashboard-garvit.netlify.app/",
   },
   {
     "id": 3,
@@ -27,28 +28,32 @@ const projects = [
     "name": "YouTube Clone",
     "description": "A simplified YouTube clone that fetches videos using an API and displays them with a modern React UI.",
     "tools": ["React", "API"],
-    "github": "https://github.com/Garvit-Trivedi/youtube-clone-react"
+    "github": "https://github.com/Garvit-Trivedi/youtube-clone-react",
+    "deployed": "https://youtube-frontend-ch16.onrender.com",
   },
   {
     "id": 5,
     "name": "spotify-react",
     "description": "A front-end clone of PodBean, a podcast hosting platform, developed using HTML and CSS.",
     "tools": ["React", ],
-    "github": "Spotify React – A React-based Spotify clone for music streaming. 🎵🚀"
+    "github": "Spotify React – A React-based Spotify clone for music streaming. 🎵🚀",
+    "deployed": "https://spontaneous-dolphin-d0dcb9.netlify.app/",
   },
   {
     "id": 6,
     "name": "IdeaForge-website",
     "description": "IdeaForge Website – Showcase innovations, products, and company insights. 🚀💡",
     "tools": ["HTML", "CSS"],
-    "github": "https://github.com/Garvit-Trivedi/IdeaForge-website"
+    "github": "https://github.com/Garvit-Trivedi/IdeaForge-website",
+    "deployed": "https://starlit-tiramisu-9c9a78.netlify.app/",
   },
   {
     "id": 7,
     "name": "Fashion-websites ",
     "description": "Fashion Website – Explore trends, shop styles, and stay stylish! 👗✨",
     "tools": ["HTML", "CSS"],
-    "github": "https://github.com/Garvit-Trivedi/Fashion-websites"
+    "github": "https://github.com/Garvit-Trivedi/Fashion-websites",
+    "deployed": "https://adorable-longma-9f4ec9.netlify.app/",
   },
   {
     "id": 8,
@@ -168,6 +173,7 @@ const Projects = () => {
             {project.description}
           </p>
           <p className="text-gray-400 text-sm mb-5">Tools: {project.tools.join(", ")}</p>
+          
           <a
             href={project.github}
             className="px-6 py-3 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-full shadow-md hover:scale-110 transition-transform duration-300"
@@ -176,12 +182,24 @@ const Projects = () => {
           >
             View on GitHub
           </a>
+
+          {/* Conditionally render Live Demo button */}
+          {project.deployed && (
+            <a
+              href={project.deployed}
+              className="mt-3 px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full shadow-md transition-transform transform hover:scale-105 text-center"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     ))}
   </div>
 )}
-
 
 
 

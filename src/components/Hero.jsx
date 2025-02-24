@@ -17,7 +17,8 @@ const Hero = () => {
       <motion.img
         src="https://media-hosting.imagekit.io//3892fe25835f4242/IMG_20240125_175740.jpg?Expires=1834666774&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Obipoi~nI~0TPyxDePb133lj1N2fwaPLH9wT3LApk31vCHHbGV0pDPdmYdgMV7k3UlQQxR80GKxhQRXW183oObb72Ue6P6n932reHn2BGmf~hnLvIiG0hwSrnpZS5ZgGTyBWKCLA2-DcgKCcBERRpH6K5xWDECFucTsALorbjhukSHLeRAsUSi9ZJ4Ks89eoXOV35bzefZ0PXuKPzuR1-ztSj3G3jCG6ZZw1qQxhCl6imDBKxeAMNuZgDEdeYNkb2S4CiqhZ-b4uNQwi3SmPhqp688vkxTgiPNTqqSEAJXhV051RE4Co4Lp09zxSr9Wy~VQUA3TBQ31OBqoyiwFpeg__"
         alt="Profile"
-        className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-2xl shadow-lg border-4 border-gray-700 transition-all duration-300 hover:scale-105"
+        className="w-56 h-auto md:w-72 md:h-auto lg:w-80 lg:h-auto object-contain rounded-2xl shadow-lg border-4 border-gray-700 transition-all duration-300 hover:scale-105"
+
         whileHover={{ scale: 1.1 }}
       />
 
@@ -31,14 +32,14 @@ const Hero = () => {
         </h1>
 
         <p className="mt-4 text-lg text-gray-300 leading-relaxed">
-          I am a first-year B.Tech (CSE) student at Rai University, specializing
+          I am a first-year B.Tech (CSE) student at CodingGita(rai university), specializing
           in Full Stack Development. Passionate about coding, I focus on
           building modern, responsive, and user-friendly web applications.
         </p>
 
         <p className="mt-2 text-gray-400">
           Experienced in **MERN stack**, I have built replicas of platforms
-          like **Spotify, Amazon, Netflix, YouTube, and Google**. Eager to
+          like **Spotify, Amazon, Netflix, YouTube, and etc**. Eager to
           **learn, innovate, and solve real-world problems** through technology.
         </p>
 
